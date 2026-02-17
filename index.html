@@ -17,6 +17,7 @@
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
             <a href="#Contact">Contact</a>
+            <a href="#Projects">Projects</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -97,8 +98,8 @@
             <div class="Column_1 Column_tall">
                 <h1>Contact</h1>
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
+                <form id="contactForm" action="/api/submit/endpoint" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label for="name_ajax">Name:</label>
                         <input type="text" placeholder="Please enter your name here">
                     <label>Email:</label>
                         <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
@@ -107,6 +108,11 @@
                         <input type="submit" value="SUBMIT">
                 </form>
             </div>
+        </div>
+        <div class="Row">
+            <h1>Projects</h1>
+            <a href="https://calculator.gtgprogramming.com/"><i>Calculator App</i></a>
+            <a href="https://tictactoe.gtgprogramming.com/"><i>Tic-Tac-Toe</i></a>
         </div>
 
         <!--Footer section-->
